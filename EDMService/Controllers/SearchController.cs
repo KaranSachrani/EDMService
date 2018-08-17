@@ -62,7 +62,7 @@ namespace EDMService.Controllers
             return JsonConvert.SerializeObject(data);
         }
 
-        // GET api/values/5
+        
         public static string SafeGetString(SqlDataReader reader, int colIndex)
         {
             if (!reader.IsDBNull(colIndex))
